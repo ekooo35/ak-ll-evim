@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_marginStart="20dp"
+            android:visibility="visible"
+            app:srcCompat="@drawable/smarthome2"/>
+
+        <TextView
+            android:id="@+id/textViewBluetooth"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="AKILLI EVİM"
+            android:layout_marginStart="25dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:gravity="center_vertical"
+            android:paddingStart="16dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+
+    </LinearLayout>
+
+    <!-- Bluetooth -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="30dp">
+
+        <ImageView
+            android:id="@+id/imageViewBluetooth"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="8dp"
+            app:srcCompat="@drawable/blue" />
+
+
+        <TextView
+            android:id="@+id/textViewBluetooth"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Bluetooth Bağlantısı"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/buttonConnect"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:padding="8dp"
+            android:background="@drawable/connect"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/buttonDisConnect"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginEnd="12dp"
+            android:padding="8dp"
+            android:background="@drawable/disconnect1"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <!-- Salon -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageViewSalon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="8dp"
+            app:srcCompat="@drawable/salon_lamp" />
+
+        <TextView
+            android:id="@+id/textViewSalon"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Salon Lamba"
+            android:textSize="18sp" />
+
+        <Switch
+            android:id="@+id/switchButtonSalon"
+            android:layout_width="80dp"
+            android:layout_height="45dp"
+            android:layout_marginEnd="30dp"
+            android:thumbTint="@color/black"
+            app:thumbTint="@color/black"
+            tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+
+    </LinearLayout>
+
+    <!-- Mutfak -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageViewMutfak"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="8dp"
+            app:srcCompat="@drawable/mutfak_lamp" />
+
+
+        <TextView
+            android:id="@+id/textViewMutfak"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Mutfak Lamba"
+            android:textSize="18sp" />
+
+        <Switch
+            android:id="@+id/switchButtonMutfak"
+            android:layout_width="80dp"
+            android:layout_height="45dp"
+            android:layout_marginEnd="30dp"
+            android:thumbTint="@color/black"
+            app:thumbTint="@color/black"
+            tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+    </LinearLayout>
+
+    <!-- Yatak -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageViewY"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="8dp"
+            app:srcCompat="@drawable/yatakodasi_lamp1" />
+
+        <TextView
+            android:id="@+id/textViewYatak"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Yatak Odası Lamba"
+            android:textSize="18sp" />
+
+        <Switch
+            android:id="@+id/switchButtonYatak"
+            android:layout_width="80dp"
+            android:layout_height="45dp"
+            android:layout_marginEnd="30dp"
+            android:thumbTint="@color/black"
+            app:thumbTint="@color/black"
+            tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+
+    </LinearLayout>
+
+    <!-- Pencere -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageViewPencere"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="8dp"
+            app:srcCompat="@drawable/window_lamp" />
+
+        <TextView
+            android:id="@+id/textViewPencere"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Window"
+            android:textSize="18sp" />
+
+        <Switch
+            android:id="@+id/switchButtonPencere"
+            android:layout_width="80dp"
+            android:layout_height="45dp"
+            android:layout_marginEnd="30dp"
+            android:thumbTint="@color/black"
+            app:thumbTint="@color/black"
+            tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+    </LinearLayout>
+
+    <!-- Kapı -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="8dp"
+            app:srcCompat="@drawable/door1" />
+
+        <TextView
+            android:id="@+id/textViewKapi"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Kapı"
+            android:textSize="18sp" />
+
+        <Switch
+            android:id="@+id/switchButtonKapi"
+            android:layout_width="80dp"
+            android:layout_height="45dp"
+            android:layout_marginEnd="30dp"
+            android:thumbTint="@color/black"
+            app:thumbTint="@color/black"
+            tools:ignore="UseSwitchCompatOrMaterialXml" />
+    </LinearLayout>
+
+    <!-- Klima -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="8dp"
+            app:srcCompat="@drawable/klima"
+            tools:srcCompat="@drawable/klima" />
+
+        <TextView
+            android:id="@+id/textViewKlima"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Klima"
+            android:textSize="18sp" />
+
+        <Switch
+            android:id="@+id/switchButtonKlima"
+            android:layout_width="80dp"
+            android:layout_height="45dp"
+            android:layout_marginEnd="30dp"
+            android:thumbTint="@color/black"
+            app:thumbTint="@color/black"
+            tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+    </LinearLayout>
+
+    <!-- Sıcaklık -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageViewSicaklik"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="8dp"
+            app:srcCompat="@drawable/termo" />
+
+        <TextView
+            android:id="@+id/textViewSicaklik"
+            android:layout_width="165dp"
+            android:layout_height="32dp"
+            android:layout_weight="1"
+            android:text="Heat"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textViewSic"
+            android:layout_width="77dp"
+            android:layout_height="38dp"
+            android:text=" : "
+            tools:layout_editor_absoluteX="211dp"
+            tools:layout_editor_absoluteY="339dp" />
+
+        <Switch
+            android:id="@+id/switchButtonSicaklik"
+            android:layout_width="80dp"
+            android:layout_height="45dp"
+            android:layout_marginEnd="30dp"
+            android:thumbTint="@color/black"
+            app:thumbTint="@color/black"
+            tools:ignore="UseSwitchCompatOrMaterialXml" />
+    </LinearLayout>
+    <!-- Footer -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_marginTop="20dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="160dp"
+            app:srcCompat="@drawable/logo" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
